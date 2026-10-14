@@ -1,0 +1,50 @@
+# Local tool configuration and credentials
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.*
+!.env.example
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python environments and generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Large or generated experiment artifacts; keep final results elsewhere
+data/
+datasets/
+checkpoints/
+wandb/
+tensorboard/
+/experiments/**/runs/
+/experiments/**/outputs/
+/experiments/**/logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+events.out.tfevents.*
+
+# Upstream projects are managed as submodules; ignore unregistered checkouts.
+# For a submodule at original/<paper-id>, add !/original/<paper-id> below.
+/original/*
+!/original/README.md
